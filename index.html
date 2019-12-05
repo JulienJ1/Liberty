@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Liberty</title>
+</head>
+<body id="top">
+  <div class="navbar">
+    <h1>LIBERTY</h1>
+    <ul class="container">
+      <li><a href="#">HOME</a></li>
+      <li><a href="#projets">OUR WORKS</a></li>
+      <li><a href="#tarifs">PRICING</a></li>
+      <li><a href="#contact">CONTACT</a></li>
+    </ul>
+  </div>
+  <div class="hero-image">
+    <img src="media/logo.png" alt="liberty logo">
+    <h2>HELLO WE ARE LIBERTY<br>WE DO AMAZING THINGS EVERYDAY</h2>
+    <a href="#contact"><span class="button">CONTACT US</span></a>
+  </div>
+  <div class="content">
+    <h3 id="projets">OUR WORKS</h3>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur quidem alias cumque, impedit libero asperiores officia veritatis nesciunt totam,<br> dolore obcaecati maxime voluptates maiores atque saepe, autem sequi eius nobis.
+    </p>
+    <div class="gallery">
+      <img src="media/img-0.jpg" alt="">
+      <img src="media/img-1.jpg" alt="">
+      <img src="media/img-2.jpg" alt="">
+      <img src="media/img-3.jpg" alt="">
+      <img src="media/img-4.jpg" alt="">
+      <img src="media/img-5.jpg" alt="">
+      <img src="media/img-6.jpg" alt="">
+      <img src="media/img-7.jpg" alt="">
+    </div>
+    <h3 id="pricing">PRICING TABLE</h3>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores quam ducimus saepe eligendi modi ad magni error, rem dolorum.<br>Nulla maiores, porro nihil aspernatur ea provident aliquid esse repellat quia.
+    </p>
+    <div class="column">
+      <ul class="price">
+        <li class="header"><h4>Bronze</h4>$5 / month</li>
+        <li>1 Account</li>
+        <li>1 Project</li>
+        <li>50K API access</li>
+        <li>50MB storage</li>
+        <li>Custom Cloud Service</li>
+        <li>Weekly reports</li>
+        <li><a href="#" class="button">SIGN UP NOW</a></li>
+      </ul>
+    </div>
+    <div class="column">
+      <ul class="price">
+        <li class="header"><h4>Silver</h4>$10 / month</li>
+        <li>1 Account</li>
+        <li>3 Projects</li>
+        <li>100 API access</li>
+        <li>100MB storage</li>
+        <li>Custom Cloud Service</li>
+        <li>Weekly reports</li>
+        <li><a href="#" class="button">SIGN UP NOW</a></li>
+      </ul>
+    </div>
+    <div class="column">
+      <ul class="price">
+        <li class="header"><h4>Gold</h4>$20 / month</li>
+        <li>2 Accounts</li>
+        <li>5 Projects</li>
+        <li>100 API access</li>
+        <li>200MB storage</li>
+        <li>Custom Cloud Service</li>
+        <li>Weekly reports</li>
+        <li><a href="#" class="button">SIGN UP NOW</a></li>
+      </ul>
+    </div>
+    <div class="column">
+      <ul class="price">
+        <li class="header"><h4>Platine</h4>$35 / month</li>
+        <li>5 Accounts</li>
+        <li>20 Projects</li>
+        <li>300 API access</li>
+        <li>500MB  storage</li>
+        <li>Custom Cloud Service</li>
+        <li>Weekly reports</li>
+        <li><a href="#" class="button">SIGN UP NOW</a></li>
+      </ul>
+    </div>
+    <div class="sectioncontact">
+      <h3 id="contact">CONTACT US</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores quam ducimus saepe eligendi modi ad magni error, rem dolorum.<br>Nulla maiores, porro nihil aspernatur ea provident aliquid esse repellat quia.
+        </p>
+      <div class="formcontact">
+        <form>
+          <div id="formleft">
+            <textarea name="message" id="message" placeholder=" Message ."></textarea>
+          </div>
+          <div id="formright">
+            <input type="text" id="name" name="name" placeholder="Name ">
+            <input type="text" id="email" name="email" placeholder="Email">
+            <div id="formsubject">
+              <select id="service" name="service">
+                <option value="devis">Devis</option>
+                <option value="question">Questions</option>
+                <option value="help">Help</option>
+              </select>
+              <div id="formbutton">
+                <input type="submit" value="SEND">
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div id="arrow">
+      <a href="#top"><i class="fa fa-chevron-circle-up"></i></a>
+    </div>
+    <div class="footer">
+      <p>Copyright &copy; 2019 Julien J. All right reserved.</p>
+      <a href="https://fr-fr.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+      <a href="https://twitter.com/?lang=fr" target="_blank"><i class="fa fa-twitter"></i></a>
+      <a href="https://www.instagram.com/?hl=fr" target="_blank"><i class="fa fa-instagram"></i></a>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('a[href*=#]').on('click', function() { 
+          var page = $(this).attr('href'); 
+          var speed = 800; 
+          $('html, body').animate({
+              scrollTop: $(page).offset().top
+          }, speed, 'swing'); 
+          return false;
+      });
+      $('button[href*=#]').on('click', function() { 
+          var page = $(this).attr('href'); 
+          var speed = 800; 
+          $('html, body').animate({
+              scrollTop: $(page).offset().top
+          }, speed, 'swing'); 
+          return false;
+      });
+    });
+  </script>
+</body>
+</html>

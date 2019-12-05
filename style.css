@@ -1,0 +1,301 @@
+@font-face {
+    font-family: 'poiret_oneregular';
+    src: url('fonts/poiretone-regular-webfont.woff2') format('woff2'),
+         url('fonts/poiretone-regular-webfont.woff') format('woff');
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    background: url("media/hero.png") no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    font-family: 'poiret_oneregular', sans-serif;
+  }
+  
+p {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* LE MENU DE NAVIGATION */
+
+.navbar{
+    position: fixed;
+    overflow: hidden;
+    top: 0%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: #e74c3c;
+    justify-content: space-between;
+    z-index: 3000;
+}
+.navbar h1 {
+    margin-left: 15px;
+    color: white;
+}
+.container {
+    display: flex;
+    padding-right: 20px;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.container a {
+    padding: 15px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    transition: all .3s ease-in-out;
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+.container a:hover {
+    transform: scale(1.2);
+}
+
+/* IMAGE HERO */
+
+.hero-image {
+    height: 40vmax;
+}
+.hero-image img {
+    display: block;
+    width: 12%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top : 100px;
+}
+.hero-image h2 {
+    text-align: center;
+    font-family: 'poiret_oneregular', sans-serif;
+    color: white;
+    font-size: 70px;
+}
+.hero-image .button {
+    display: block;
+    padding: 10px 50px 10px 50px;
+    margin-left: 40%;
+    margin-right: 40%;
+    border-radius: 30px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    background-color: #e74c3c;
+    transition: all .3s ease-in-out;
+}
+.hero-image a{
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-decoration: none;
+}
+.hero-image .button:hover {
+    transform: scale(1.2);
+}
+ /* CONTENT */
+
+.content {
+    background-color: whitesmoke;
+    text-align: center;
+}
+.content h3 {
+    font-family: 'poiret_oneregular', sans-serif;
+    font-size: 50px;
+    padding-top: 100px;
+    color: black;
+}
+.content p {
+    font-size: 20px;
+    color: grey;
+    padding-bottom: 50px;
+}
+.gallery {
+    display: flex;
+    height: 500px;
+    margin-left: 300px;
+    margin-right: 300px;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+}
+.gallery img {
+    transition: all .3s ease-in-out;
+}
+.gallery img:hover {
+    transform: scale(1.2);
+}
+
+/* PRICING */
+
+.column {
+    display: inline-block;
+    width: 20%;
+    padding: 30px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: whitesmoke;
+}  
+.price {
+    list-style-type: none;
+    border: 1px solid lightslategrey;
+    margin: 0;
+    padding: 0;
+    transition: 0.3s;
+}
+.price .header {
+    font-size: 25px;
+    transition: 0.3s;
+    background-color: #e9e9e9;
+    color: black;
+
+}
+.price li {
+    border-bottom: 1px solid lightslategrey;
+    padding: 20px;
+    text-align: center;
+}
+.price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+.price:hover .header {
+    color: white;
+    background-color: #3498dbc4;
+
+}
+.button {
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+.price:hover .button {
+    color: white;
+    background-color: #3498dbc4;
+}
+
+/* SECTION CONTACT */
+
+.sectioncontact {
+    background-color: #2c3e50;
+    text-align: center;
+}
+.sectioncontact h3{
+    color: white;
+}
+
+/* LE FORMULAIRE DE CONTACT */
+
+.formcontact {
+    background-color: #2c3e50;
+    padding-bottom: 100px;
+}
+#formleft {
+	width: 40%;
+    padding-right: 5px;
+    float: left;
+}
+#message {
+    width: 100%;
+    height: 165px;
+    display: block;
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 8px;
+    margin-left: 10%;
+}
+#name,#email, select {
+    width: 100%;
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 8px 0;
+    display: inline-block;
+}
+input[type=submit] {
+    display: inline-block;
+    width: 100%;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #e74c3c;
+    color: white;
+}
+#formright {
+    width: 40%;
+    display: inline-block;
+}
+#formsubject {
+    width: 100%;
+}
+#service {
+    display: inline-block;
+    width: 77%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-right: 17px;
+}
+#formbutton {
+    display: inline-block;
+    padding: auto;
+    width: 20%;
+}
+input[type=submit]:hover {
+    transform: scale(1.2);
+}
+
+/* FOOTER */
+
+#arrow {
+    position: absolute;
+    top: 3396px;
+    left: 49%;
+}
+#arrow a {
+    font-size: 50px;
+    color: #e74c3c;
+    transition: all .3s ease-in-out;
+}
+#arrow i {
+    transition: all .3s ease-in-out;
+}
+#arrow i:hover {
+    transform: scale(1.2);
+}
+.footer {
+    background-color: whitesmoke;
+    padding-top: 50px;
+}
+.footer p{
+    font-size: 10px;
+    padding-bottom: 10px;
+}
+.footer i {
+    font-size: 20px;
+    padding: 0 10px 30px 10px;
+    transition: all .2s ease-in-out;
+}
+.footer i:hover {
+    transform: scale(1.2);
+}
+.footer a{
+    text-decoration: none;
+    color: black;
+}
+.footer a:visited{
+    text-decoration: none;
+    color: black;
+}
